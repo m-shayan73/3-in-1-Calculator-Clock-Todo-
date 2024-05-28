@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>3-in-1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./utils.css">
+
+    <style>
+        body {
+            background-color: #D9AFD9;
+            background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div id="vertical-navbar" class="col-sm-3">
+                <nav class="nav navbar text-center">
+                    <div class="row">
+                        <div class="col-sm-12 pt-30">
+                            <a href="./index.html"><img src="./logo.png" alt="logo"></a>
+                        </div>
+                        <div class="col-sm-12 pt-100">
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./calculator.html">Calculator</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./clock.html">Clock</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./to-do.html">To-Do List</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-12 pt-30">
+                            <span><a href="#"><i class="fa-brands fa-dribbble"
+                                        style="color: #000000;"></i></a></span>
+                            <span><a href="#"><i class="fa-brands fa-behance"
+                                        style="color: #000000"></i></a></span>
+                            <span><a href="#"><i class="fa-brands fa-facebook"
+                                        style="color: #000000;"></i></a></span>
+                            <span><a href="#"><i class="fa-brands fa-instagram"
+                                        style="color: #000000"></i></a></span>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="col-sm-12 horizontal-navbar">
+                <nav class="navbar navbar-expand-lg navbar-brand-center">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a href="./index.html"><img src="./logo.png" alt="logo"></a>
+                        <div class="collapse navbar-collapse" id="navbarToggler">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./calculator.html">Calculator</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./clock.html">Clock</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./to-do.html">To-Do List</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="col-lg-9 pt-30 pb-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="pb-100">CLOCK</h3>
+                        </div>
+
+                        <div class="col-lg-7 d-flex flex-column justify-content-center">
+                            <h4>Time: <span id="time"></span></h4>
+                            <h4>Date: <span id="date"></span></h4>
+                        </div>
+
+                        <div class="col-lg-5 pt-4 pt-lg-0 d-flex justify-content-center align-items-center">
+                            <div class="clock">
+                                <div class="hand" style="--clr: #ff3d58; --h:70px;" id="hour"><i></i></div>
+                                <div class="hand" style="--clr: #00a6ff; --h:80px" id="min"><i></i></div>
+                                <div class="hand" style="--clr: #a600ff; --h:90px" id="sec"><i></i></div>
+
+                                <span style="--i:1"><b>1</b></span>
+                                <span style="--i:2"><b>2</b></span>
+                                <span style="--i:3"><b>3</b></span>
+                                <span style="--i:4"><b>4</b></span>
+                                <span style="--i:5"><b>5</b></span>
+                                <span style="--i:6"><b>6</b></span>
+                                <span style="--i:7"><b>7</b></span>
+                                <span style="--i:8"><b>8</b></span>
+                                <span style="--i:9"><b>9</b></span>
+                                <span style="--i:10"><b>10</b></span>
+                                <span style="--i:11"><b>11</b></span>
+                                <span style="--i:12"><b>12</b></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b1d6fd53f7.js" crossorigin="anonymous"></script>
+    <script>
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
+        setInterval(() => {
+            my_date = new Date();
+            let h = my_date.getHours();
+            let m = my_date.getMinutes();
+            let s = my_date.getSeconds();
+            curr_time = h + ":" + m + ":" + s;
+            curr_date = my_date.toLocaleDateString(undefined, options)
+            document.getElementById("time").innerHTML = curr_time
+            document.getElementById("date").innerHTML = curr_date
+
+            let hRotation = 30 * h + m / 2;
+            let mRotation = 6 * m;
+            let sRotation = 6 * s;
+
+            document.getElementById("hour").style.transform = `rotate(${hRotation}deg)`;
+            document.getElementById("min").style.transform = `rotate(${mRotation}deg)`;
+            document.getElementById("sec").style.transform = `rotate(${sRotation}deg)`;
+        }, 1000)
+    </script>
+</body>
+
+</html>

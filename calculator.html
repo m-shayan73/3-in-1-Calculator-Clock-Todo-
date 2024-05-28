@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>3-in-1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./utils.css">
+
+    <style>
+        body {
+            background-color: #D9AFD9;
+            background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div id="vertical-navbar" class="col-sm-3">
+                <nav class="nav navbar text-center">
+                    <div class="row">
+                        <div class="col-sm-12 pt-30">
+                            <a href="./index.html"><img src="./logo.png" alt="logo"></a>
+                        </div>
+                        <div class="col-sm-12 pt-100">
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./calculator.html">Calculator</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./clock.html">Clock</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./to-do.html">To-Do List</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-12 pt-30">
+                            <span><a href="#"><i class="fa-brands fa-dribbble"
+                                        style="color: #000000;"></i></a></span>
+                            <span><a href="#"><i class="fa-brands fa-behance"
+                                        style="color: #000000"></i></a></span>
+                            <span><a href="#"><i class="fa-brands fa-facebook"
+                                        style="color: #000000;"></i></a></span>
+                            <span><a href="#"><i class="fa-brands fa-instagram"
+                                        style="color: #000000"></i></a></span>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="col-sm-12 horizontal-navbar">
+                <nav class="navbar navbar-expand-lg navbar-brand-center">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a href="./index.html"><img src="./logo.png" alt="logo"></a>
+                        <div class="collapse navbar-collapse" id="navbarToggler">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./calculator.html">Calculator</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./clock.html">Clock</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./to-do.html">To-Do List</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="col-lg-9 text-center pt-30 pb-100">
+                <div class="container">
+                    <div class="row d-flex flex-column justify-content-center align-items-center">
+                        <div class="col-sm-12">
+                            <h3>CALCULATOR</h3>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <input id="calculator-display" class="input" type="text">
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <button class="button calculator clear">C</button>
+                                    <button class="button calculator function">%</button>
+                                    <button class="button calculator function">M+</button>
+                                    <button class="button calculator function">M-</button>
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <button class="button calculator number">7</button>
+                                    <button class="button calculator number">8</button>
+                                    <button class="button calculator number">9</button>
+                                    <button class="button calculator operation">*</button>
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <button class="button calculator number">4</button>
+                                    <button class="button calculator number">5</button>
+                                    <button class="button calculator number">6</button>
+                                    <button class="button calculator operation">/</button>
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <button class="button calculator number">1</button>
+                                    <button class="button calculator number">2</button>
+                                    <button class="button calculator number">3</button>
+                                    <button class="button calculator operation">+</button>
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <button class="button calculator">0</button>
+                                    <button class="button calculator number">.</button>
+                                    <button class="button calculator operation">=</button>
+                                    <button class="button calculator operation">-</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b1d6fd53f7.js" crossorigin="anonymous"></script>
+    <script>
+        let cal_display = "";
+        let buttons = document.querySelectorAll('button.calculator');
+        Array.from(buttons).forEach((button) => {
+            button.addEventListener('click', (e) => {
+                if (e.target.innerHTML == '=') {
+                    cal_display = eval(cal_display);
+                    document.querySelector('#calculator-display').value = cal_display;
+                }
+                else if (e.target.innerHTML == 'C') {
+                    cal_display = "";
+                    document.querySelector('#calculator-display').value = cal_display;
+                }
+                else {
+                    console.log(e.target)
+                    cal_display = cal_display + e.target.innerHTML
+                    document.querySelector('#calculator-display').value = cal_display;
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
